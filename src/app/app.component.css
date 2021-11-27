@@ -1,0 +1,56 @@
+
+.container{
+    margin-top:10px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 75px;
+    border-radius: 30px;
+    background: #ecf0f3;
+    box-shadow:  7px 7px 10px #999c9e,
+                 -7px -7px 10px #ffffff;
+}
+
+.luz{
+    margin-bottom: 100px;
+    text-align: center;
+    width:260px;
+    height: 127px;
+    border-radius: 29px;
+    background: #ecf0f3;
+    box-shadow:  7px 7px 10px #999c9e,
+                 -7px -7px 10px #ffffff;
+    position: relative;
+    left: 80px;
+}
+
+.sonido{
+    margin-bottom: 100px;
+    text-align: center;
+    width:260px;
+    height: 127px;
+    border-radius: 29px;
+    background: #ecf0f3;
+    box-shadow:  7px 7px 10px #999c9e,
+                 -7px -7px 10px #ffffff;
+    position: fixed;
+    right: 80px;
+    top: 150px;
+}
+
+button{
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width:40%;
+    height: 30px;
+    font: size 20px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 76px;
+    background: #24cfaa;
+    box-shadow: inset 25px -25px 52px #1eaa8b,
+                inset -25px 25px 52px #2af4c9;
+}

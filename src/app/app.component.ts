@@ -7,48 +7,40 @@ import { ServicesService } from './services/services.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   pass = false;
   toogle = new FormControl('', []);
   constructor(private services: ServicesService) {
-    this.services.getRealTime().subscribe(msg=>{
-      this.pass = msg[0]
-      if(this.toogle.value != msg[0]){
-        this.toogle.setValue(msg[0])
-      }
-    })
- }
 
+ }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log("Hola")
   }
 
   title = 'Automatic';
   turnOn(){
-    this.toogle.valueChanges.subscribe(newToogleValue=> {
-      if(newToogleValue){
-        console.log("encendido")
-       //  this.bandera = newToogleValue
-        this.services.sendMessage(1)
-      }
-   });
+    console.log("entro")
+    this.services.sendMessage(1)
 
 }
 
   turnOff(){
-    this.toogle.valueChanges.subscribe(newToogleValue=> {
-      if(newToogleValue){
-        console.log("encendido")
-       //  this.bandera = newToogleValue
-        this.services.sendMessage(1)
-      }
-      else{
-       // this.bandera = newToogleValue
-       this.services.sendMessage(0)
-      }
-      
-   });
+    console.log("entro")
+    this.services.sendMessage(0)
 
 }
+turnOnS(){
+  console.log("entro")
+  this.services.sendMessageS(1)
+
+}
+
+turnOffS(){
+  console.log("entro")
+  this.services.sendMessageS(0)
+
+}
+
   }
 

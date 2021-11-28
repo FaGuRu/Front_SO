@@ -12,6 +12,9 @@ export class ServicesService {
   }
   sendMessage(message: number){
     this.db.list("Casa/Dispositivos/").set("Luz",message)
+  }
+
+  sendMessageS(message: number){
     this.db.list("Casa/Dispositivos/").set("Sonido",message)
   }
 

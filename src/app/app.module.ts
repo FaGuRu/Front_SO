@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
+import { AngularFireModule } from '@angular/fire';
+import { ServicesService } from './services/services.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,7 @@ import { AppComponent } from './app.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserModule
   ],
-  providers: [],
+  providers: [ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

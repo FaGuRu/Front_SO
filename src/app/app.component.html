@@ -5,15 +5,14 @@
   <br>
   <div class="luz">
     <h4>Control de ilumionación</h4>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" [formControl]="toogle">
-    </div>
+    <button class="boton-on" (click)="turnOn()">ON</button>
+    <button class="boton-off" (click)="turnOff()">OFF</button>
   </div>
 
   <div class="sonido">
     <h4>Control de sonido</h4>
-      <button class="boton-on" (click)="turnOn()">ON</button>
-      <button class="boton-off" (click)="turnOff()">OFF</button>
+      <button class="boton-on" (click)="turnOnS()">ON</button>
+      <button class="boton-off" (click)="turnOffS()">OFF</button>
   </div>
 
   <footer class="py-3 my-4">
